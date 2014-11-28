@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IIMSLogStateChange1" />
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://172.22.145.120/IMService/IMSLogStateChange.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IIMSLogStateChange1"
+                contract="IMService.IIMSLogStateChange" name="BasicHttpBinding_IIMSLogStateChange1" />
+        </client>
+    </system.serviceModel>
+</configuration>
+
+服务需要重新发布，带DLL包

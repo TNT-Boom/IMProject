@@ -1,0 +1,8 @@
+E:\IMProject\IMServer\obj\x86\Debug\IMServer.UI.W_Main.resources
+E:\IMProject\IMServer\obj\x86\Debug\IMServer.Properties.Resources.resources
+E:\IMProject\IMServer\obj\x86\Debug\IMServer.csproj.GenerateResource.Cache
+E:\IMProject\IMServer\bin\Debug\IMServer.exe
+E:\IMProject\IMServer\bin\Debug\IMServer.pdb
+E:\IMProject\IMServer\obj\x86\Debug\IMServer.exe
+E:\IMProject\IMServer\obj\x86\Debug\IMServer.pdb
+E:\IMProject\IMServer\obj\x86\Debug\IMServer.csprojResolveAssemblyReference.cache

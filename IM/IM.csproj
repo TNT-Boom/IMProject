@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88A447A3-485F-4EC2-8278-25B4D3450B3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IM</RootNamespace>
+    <AssemblyName>IM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection\CallBackFunc.cs" />
+    <Compile Include="Connection\DelegateMethod.cs.cs" />
+    <Compile Include="Connection\IPEndPointHandler.cs" />
+    <Compile Include="Connection\SocketHandler.cs" />
+    <Compile Include="Entity\DelegateMem.cs" />
+    <Compile Include="Entity\MsgList.cs" />
+    <Compile Include="Entity\RecvdMsg.cs" />
+    <Compile Include="Entity\SendCallBackParam.cs.cs" />
+    <Compile Include="Entity\User.cs" />
+    <Compile Include="MsgHandler\AnalyMsg.cs" />
+    <Compile Include="MsgHandler\BuildMsg.cs" />
+    <Compile Include="MsgHandler\C2CAnayMsg.cs" />
+    <Compile Include="Service References\IMService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UI\W_AddFrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\W_AddFrd.Designer.cs">
+      <DependentUpon>W_AddFrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\W_Regist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\W_Regist.Designer.cs">
+      <DependentUpon>W_Regist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\W_GroupTalk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\W_GroupTalk.Designer.cs">
+      <DependentUpon>W_GroupTalk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UIHandler.cs" />
+    <Compile Include="UI\W_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\W_Login.Designer.cs">
+      <DependentUpon>W_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\W_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\W_Main.Designer.cs">
+      <DependentUpon>W_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\W_SingleChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\W_SingleChat.Designer.cs">
+      <DependentUpon>W_SingleChat.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\W_AddFrd.resx">
+      <DependentUpon>W_AddFrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\W_Regist.resx">
+      <DependentUpon>W_Regist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\W_GroupTalk.resx">
+      <DependentUpon>W_GroupTalk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\W_Login.resx">
+      <DependentUpon>W_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\W_Main.resx">
+      <DependentUpon>W_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\W_SingleChat.resx">
+      <DependentUpon>W_SingleChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\IMService\IMSLogStateChange.wsdl" />
+    <None Include="Service References\IMService\IMSLogStateChange.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\IMService\IMSLogStateChange1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\IMService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\IMService\configuration.svcinfo" />
+    <None Include="Service References\IMService\configuration91.svcinfo" />
+    <None Include="Service References\IMService\IMSLogStateChange.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\IMService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

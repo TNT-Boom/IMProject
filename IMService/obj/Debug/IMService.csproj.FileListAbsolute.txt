@@ -1,0 +1,12 @@
+E:\C#\IMProject\IMService\bin\IMService.dll
+E:\C#\IMProject\IMService\bin\IMService.pdb
+E:\C#\IMProject\IMService\obj\Debug\IMService.dll
+E:\C#\IMProject\IMService\obj\Debug\IMService.pdb
+E:\IMProject\IMService\bin\Web.config
+E:\IMProject\IMService\bin\Web.Debug.config
+E:\IMProject\IMService\bin\Web.Release.config
+E:\IMProject\IMService\bin\IMService.dll
+E:\IMProject\IMService\bin\IMService.pdb
+E:\IMProject\IMService\obj\Debug\IMService.dll
+E:\IMProject\IMService\obj\Debug\IMService.pdb
+E:\IMProject\IMService\obj\Debug\IMService.csprojResolveAssemblyReference.cache

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d6d67e77-2566-44af-bede-3b8941a9f2a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:61397/IMSLogStateChange.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IMSLogStateChange.xsd" MetadataType="Schema" ID="f9f13b82-48cd-4972-9705-d4e452c358b0" SourceId="1" SourceUrl="http://localhost:61397/IMSLogStateChange.svc?xsd=xsd0" />
+    <MetadataFile FileName="IMSLogStateChange.disco" MetadataType="Disco" ID="bdf3f56a-8913-4404-b7c8-8720f98ce612" SourceId="1" SourceUrl="http://localhost:61397/IMSLogStateChange.svc?disco" />
+    <MetadataFile FileName="IMSLogStateChange1.xsd" MetadataType="Schema" ID="a6d133db-e78b-4020-a066-a6d675d782d9" SourceId="1" SourceUrl="http://localhost:61397/IMSLogStateChange.svc?xsd=xsd1" />
+    <MetadataFile FileName="IMSLogStateChange.wsdl" MetadataType="Wsdl" ID="bcb04ab4-b391-405d-9fb2-755c94117eea" SourceId="1" SourceUrl="http://localhost:61397/IMSLogStateChange.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
