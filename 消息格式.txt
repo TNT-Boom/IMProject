@@ -1,0 +1,36 @@
+type| userName|srcIP|destName|content;
+
+第一次发送：
+type:  login
+userName: userName
+srcIP: srcIP
+destName: ""
+content: ""
+
+连接后单聊
+type:client2client
+userName: userName
+srcIP: srcIP
+destName:destName
+content:content
+
+对方不在线
+type:offline
+userName: srcUser
+srcIP: srcIP
+destName:destName
+content:对方未在线
+
+退出
+type: logout
+userName: userName
+srcIP: ""
+destName: ""
+content: ""
+
+添加好友
+type:addfrd
+userName：userName
+srcIP: srcIP
+destName: destName
+content:""
